@@ -42,21 +42,29 @@ body {
     margin: 0;
 }
 
+/* 🔹 Стилі для посилань у header */
+.header a {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Стиль для навігаційних посилань */
 .nav-link {
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    text-decoration: none;
+}
+
+/* Стиль для контактних посилань */
+.contact-link {
+    font-size: 16px;
 }
 
 /* Ховер та фокус для посилань */
 .nav-link:hover,
-.nav-link:focus {
-    color: #404bbf;
-}
-
+.nav-link:focus,
 .contact-item:hover,
 .contact-item:focus {
     color: #404bbf;
@@ -75,11 +83,6 @@ body {
 }
 
 .contact-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
