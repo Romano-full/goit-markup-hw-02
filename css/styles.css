@@ -7,11 +7,13 @@ body {
     background-color: #ffffff;
 }
 
+/* Linki */
 a {
     text-decoration: none;
     color: inherit;
 }
 
+/* Listy */
 ul {
     list-style: none;
     margin: 0;
@@ -25,22 +27,11 @@ ul {
     border-bottom: 1px solid #e4e4e4;
 }
 
+/* Nawigacja */
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #2e2f42;
-}
-
-.logo-accent {
-    color: #4d5ae5;
 }
 
 .nav-menu {
@@ -48,35 +39,46 @@ ul {
     gap: 20px;
 }
 
+/* Linki nawigacyjne */
 .nav-link {
     font-size: 16px;
     font-weight: 500;
     color: #2e2f42;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     transition: color 0.3s ease;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
+    color: #404bbf;
+}
+
+/* Pierwszy link w nawigacji */
+.nav-link:first-child {
+    color: #2e2f42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* Logotyp */
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: #4d5ae5;
 }
 
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 5px;
+/* Span w logotypie */
+.logo span {
+    color: #2e2f42;
 }
 
-.contact-link {
-    font-size: 14px;
-    color: #434455;
-    transition: color 0.3s ease;
-}
-
-.contact-link:hover {
-    color: #4d5ae5;
-}
-
-/* Hero Section */
+/* Sekcja Hero */
 .hero-section {
     background-color: #2e2f42;
     color: #ffffff;
@@ -84,12 +86,18 @@ ul {
     padding: 60px 20px;
 }
 
+/* Nagłówek Hero */
 .hero-title {
-    font-size: 48px;
+    font-size: 56px;
     font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
     margin-bottom: 20px;
 }
 
+/* Przycisk Hero */
 .button {
     background-color: #4d5ae5;
     color: #ffffff;
@@ -99,14 +107,17 @@ ul {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 }
 
-.button:hover {
-    background-color: #404bbf;
-    transform: scale(1.05);
+.button:hover,
+.button:focus {
+    background-color: #404BBF;
 }
 
-/* Advantages Section */
+/* Sekcja zalet */
 .advantages-section {
     background-color: #ffffff;
     padding: 50px 20px;
@@ -134,7 +145,7 @@ ul {
     line-height: 1.6;
 }
 
-/* Team Section */
+/* Sekcja zespołu */
 .team-section {
     background-color: #f4f4fd;
     padding: 50px 20px;
@@ -178,6 +189,52 @@ ul {
 .team-list li p {
     font-size: 14px;
     color: #646566;
+}
+
+/* Sekcja kontaktów */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+/* Linki kontaktowe */
+.contact-link {
+    font-size: 14px;
+    color: #434455;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #4d5ae5;
+}
+
+/* Styl dla sekcji address */
+.address {
+    font-style: normal;
+}
+
+/* Lista w sekcji */
+.list-item {
+    background-color: #ffffff;
+}
+
+/* Styl dla nagłówka w liście */
+.list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+/* Styl dla paragrafu w liście */
+.list-paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
 /* Footer */
