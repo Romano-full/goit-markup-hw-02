@@ -1,4 +1,4 @@
-/* Base Styles */
+/* ========== GLOBAL STYLES ========== */
 body {
     margin: 0;
     padding: 0;
@@ -7,27 +7,28 @@ body {
     background-color: #ffffff;
 }
 
-/* Linki */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Listy */
-ul {
-    list-style: none;
+/* ========== TYPOGRAPHY ========== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
-    padding: 0;
 }
 
-/* Header */
+p {
+    margin: 0;
+}
+
+/* ========== HEADER ========== */
 .header {
     background-color: #ffffff;
     padding: 20px 40px;
     border-bottom: 1px solid #e4e4e4;
 }
 
-/* Nawigacja */
+/* ========== NAVIGATION ========== */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -39,7 +40,6 @@ ul {
     gap: 20px;
 }
 
-/* Linki nawigacyjne */
 .nav-link {
     font-size: 16px;
     font-weight: 500;
@@ -54,16 +54,7 @@ ul {
     color: #404bbf;
 }
 
-/* Pierwszy link w nawigacji */
-.nav-link:first-child {
-    color: #2e2f42;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-
-/* Logotyp */
+/* ========== LOGO ========== */
 .logo {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -73,12 +64,11 @@ ul {
     color: #4d5ae5;
 }
 
-/* Span w logotypie */
 .logo span {
-    color: #2e2f42;
+    color: #f4f4fd;
 }
 
-/* Sekcja Hero */
+/* ========== HERO SECTION ========== */
 .hero-section {
     background-color: #2e2f42;
     color: #ffffff;
@@ -86,7 +76,6 @@ ul {
     padding: 60px 20px;
 }
 
-/* Nagłówek Hero */
 .hero-title {
     font-size: 56px;
     font-weight: 700;
@@ -97,7 +86,7 @@ ul {
     margin-bottom: 20px;
 }
 
-/* Przycisk Hero */
+/* BUTTON */
 .button {
     background-color: #4d5ae5;
     color: #ffffff;
@@ -117,110 +106,27 @@ ul {
     background-color: #404BBF;
 }
 
-/* Sekcja zalet */
-.advantages-section {
-    background-color: #ffffff;
+/* ========== SECTIONS ========== */
+.section {
     padding: 50px 20px;
     text-align: center;
 }
 
-.advantages-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.advantages-list li h3 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #2e2f42;
-}
-
-.advantages-list li p {
-    font-size: 16px;
-    color: #646566;
-    line-height: 1.6;
-}
-
-/* Sekcja zespołu */
-.team-section {
-    background-color: #f4f4fd;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.team-section h2 {
+.section-title {
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 30px;
-}
-
-.team-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.team-list li {
-    background-color: #ffffff;
     text-align: center;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #2e2f42;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
 }
 
-.team-list li img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.team-list li h3 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.team-list li p {
-    font-size: 14px;
-    color: #646566;
-}
-
-/* Sekcja kontaktów */
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 5px;
-}
-
-/* Linki kontaktowe */
-.contact-link {
-    font-size: 14px;
-    color: #434455;
-    transition: color 0.3s ease;
-}
-
-.contact-link:hover {
-    color: #4d5ae5;
-}
-
-/* Styl dla sekcji address */
-.address {
-    font-style: normal;
-}
-
-/* Lista w sekcji */
+/* ========== LISTS ========== */
 .list-item {
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 
-/* Styl dla nagłówka w liście */
 .list-title {
     font-weight: 500;
     font-size: 20px;
@@ -229,7 +135,6 @@ ul {
     color: #2e2f42;
 }
 
-/* Styl dla paragrafu w liście */
 .list-paragraph {
     font-size: 16px;
     line-height: 1.5;
@@ -237,7 +142,12 @@ ul {
     color: #434455;
 }
 
-/* Footer */
+/* ========== IMAGES ========== */
+.image-class {
+    width: 360px;
+}
+
+/* ========== FOOTER ========== */
 .footer {
     background-color: #2e2f42;
     color: #ffffff;
@@ -255,9 +165,9 @@ ul {
     display: block;
 }
 
-.footer p {
+.footer-paragraph {
     font-size: 16px;
-    line-height: 1.6;
-    max-width: 400px;
-    margin: 0;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
 }
