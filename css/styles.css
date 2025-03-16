@@ -1,24 +1,16 @@
-/* =======================
-   🔹 Глобальні стилі
-======================= */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap');
-
+/* Підключення шрифтів */
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFFFFF;
-    margin: 0;
 }
 
-/* =======================
-   🔹 Header
-======================= */
+/* Хедер */
 .header {
-    background-color: #ffffff;
+    font-family: "Raleway", sans-serif;
 }
 
-/* 🔹 Логотип */
-.header .logo {
+.logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -26,113 +18,73 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    text-decoration: none;
 }
 
-/* 🔹 Стиль для `span` у логотипі в хедері */
-.header .logo span {
+.logo-text {
     color: #2e2f42;
-    /* Виправлено */
 }
 
-/* 🔹 Навігація */
-.nav-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-/* 🔹 Стилі для посилань у header */
-.header .nav-link {
-    font-size: 16px;
+.nav-link {
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.5;
-    /* Виправлено */
     letter-spacing: 0.02em;
-    /* Виправлено */
     color: #2e2f42;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
 }
 
-/* Ховер та фокус для навігаційних посилань */
-.header .nav-link:hover,
-.header .nav-link:focus {
+.nav-link:hover,
+.nav-link:focus {
     color: #404bbf;
-    /* Виправлено */
 }
 
-/* 🔹 Контакти в header (address) */
-.header .contact-info {
+.contact-info {
     font-style: normal;
 }
 
-.header .contact-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-/* 🔹 Стилі для контактних посилань */
-.header .contact-link {
+.contact-link {
     font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: #434455;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
 }
 
-/* Ховер та фокус для контактних посилань */
-.header .contact-link:hover,
-.header .contact-link:focus {
+.contact-link:hover,
+.contact-link:focus {
     color: #404bbf;
-    /* Виправлено */
 }
 
-/* =======================
-   🔹 Sekcja Hero
-======================= */
+/* Перша секція (Hero Section) */
 .hero-section {
     background-color: #2e2f42;
-    text-align: center;
 }
 
 .hero-title {
     font-size: 56px;
-    font-weight: 700;
     line-height: 1.07;
+    text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
 }
 
-/* =======================
-   🔹 Przycisk "Order Service"
-======================= */
 .button {
-    background: #4d5ae5;
+    background-color: #4D5AE5;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
-    border: none;
 }
 
 .button:hover,
 .button:focus {
-    background-color: #404bbf;
+    background-color: #404BBF;
 }
 
-/* =======================
-   🔹 Sekcja "Our Advantages"
-======================= */
-.advantages-section {
-    background-color: #ffffff;
-}
-
+/* Друга секція (Our Advantages) */
 .advantages-title {
     font-size: 36px;
-    font-weight: 700;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
@@ -140,37 +92,57 @@ body {
     color: #2e2f42;
 }
 
-/* =======================
-   🔹 Sekcja "Our Team"
-======================= */
+.advantages-heading {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.advantages-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/* Третя секція (Our Team) */
 .team-section {
     background-color: #F4F4FD;
-    /* Виправлено */
 }
 
 .team-title {
     font-size: 36px;
-    font-weight: 700;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
 }
+
 .team-item {
     background-color: #FFFFFF;
 }
 
-/* =======================
-   🔹 Sekcja "Our Portfolio"
-======================= */
-.portfolio-section {
-    background-color: #FFFFFF;
+.team-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
 }
 
+.team-role {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/* Четверта секція (Our Portfolio) */
 .portfolio-title {
     font-size: 36px;
-    font-weight: 700;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
@@ -178,15 +150,26 @@ body {
     color: #2e2f42;
 }
 
-/* =======================
-   🔹 Footer
-======================= */
-.page-footer {
-    background-color: #2e2f42;
-    text-align: center;
+.portfolio-item-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
 }
 
-/* 🔹 Стиль для логотипу в footer */
+.portfolio-item-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/* Футер */
+.page-footer {
+    background-color: #2e2f42;
+}
+
 .footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -195,28 +178,14 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    text-decoration: none;
 }
 
-/* 🔹 Стиль для `span` у логотипі в футері */
-.footer-logo span {
+.footer-logo-text {
     color: #f4f4fd;
-    /* Повернуто */
-    font-weight: bold;
 }
 
-/* 🔹 Додатковий стиль для акценту */
-.footer-logo-accent {
-    color: #4d5ae5;
-}
-
-/* =======================
-   🔹 Додаткові стилі
-======================= */
-img {
-    max-width: 100%;
-}
-
-address {
-    font-style: normal;
+.footer-text {
+    line-height: 1.5;
+    color: var(--footer-text-color, #F4F4FD);
+    letter-spacing: 0.02em;
 }
