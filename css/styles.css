@@ -85,7 +85,11 @@ body {
 }
 
 /* Колір при наведенні */
-.contact-link:hover,
+.contact-link:hover {
+    color: #404bbf;
+}
+
+/* Колір при фокусі */
 .contact-link:focus {
     color: #404bbf;
 }
