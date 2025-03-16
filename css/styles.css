@@ -11,13 +11,13 @@ body {
 }
 
 /* =======================
-   🔹 Header (Головний заголовок)
+   🔹 Header
 ======================= */
 .header {
     background-color: #ffffff;
 }
 
-/* 🔹 Стиль для logo */
+/* 🔹 Logo */
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -63,18 +63,12 @@ body {
     font-style: normal;
 }
 
-/* Список контактів */
 .contact-list {
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
-/* Пункти списку контактів */
-.contact-list li {
-    background-color: #FFFFFF;
-}
-
-/* 🔹 Стилізація контактних посилань */
 .contact-link {
     font-size: 16px;
     line-height: 1.5;
@@ -84,12 +78,7 @@ body {
     transition: color 0.3s ease-in-out;
 }
 
-/* Колір при наведенні */
-.contact-link:hover {
-    color: #404bbf;
-}
-
-/* Колір при фокусі */
+.contact-link:hover,
 .contact-link:focus {
     color: #404bbf;
 }
@@ -148,6 +137,8 @@ body {
 
 .advantages-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .advantages-item {
@@ -186,6 +177,16 @@ body {
     color: #2e2f42;
 }
 
+.team-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.team-item {
+    margin-bottom: 20px;
+}
+
 .team-name {
     font-weight: 500;
     font-size: 20px;
@@ -202,7 +203,6 @@ body {
     letter-spacing: 0.02em;
     color: #434455;
 }
-
 .first_member {
     background-color: #FFFFFF;
 }
@@ -224,6 +224,16 @@ body {
     color: #2e2f42;
 }
 
+.portfolio-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-item {
+    margin-bottom: 20px;
+}
+
 .portfolio-item-title {
     font-weight: 500;
     font-size: 20px;
@@ -233,8 +243,8 @@ body {
 }
 
 .portfolio-item-text {
-    font-weight: 400;
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
