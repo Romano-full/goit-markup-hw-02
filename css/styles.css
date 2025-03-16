@@ -1,5 +1,5 @@
 /* =======================
-   Глобальні стилі
+   🔹 Globalne style
 ======================= */
 body {
     font-family: "Roboto", sans-serif;
@@ -8,12 +8,12 @@ body {
 }
 
 /* =======================
-   Шрифти Google
+   🔹 Podłączenie Google Fonts
 ======================= */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap');
 
 /* =======================
-   Логотипи (Header & Footer)
+   🔹 Logo (Header & Footer)
 ======================= */
 .logo {
     font-family: "Raleway", sans-serif;
@@ -25,16 +25,16 @@ body {
     color: #4d5ae5;
 }
 
-.header-logo .logo-part {
+.logo-accent {
     color: #2e2f42;
 }
 
-.footer-logo .logo-part {
+.logo-light .logo-accent {
     color: #f4f4fd;
 }
 
 /* =======================
-   Навігація (Header)
+   🔹 Nawigacja (Header)
 ======================= */
 .nav-link {
     font-weight: 500;
@@ -49,71 +49,42 @@ body {
     color: #404bbf;
 }
 
-.contacts {
-    font-style: normal;
-}
-
-.contacts-list {
+/* =======================
+   🔹 Kontakty w headerze
+======================= */
+.contact-link {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
-
-.contacts-link {
     color: #434455;
+    text-decoration: none;
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
+.contact-link:hover,
+.contact-link:focus {
     color: #404bbf;
 }
 
 /* =======================
-   Секції - Заголовки та Текст
+   🔹 Sekcja Hero
 ======================= */
-.section-title {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.1;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.section-subtitle {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #2e2f42;
-}
-
-.section-text {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
-/* =======================
-   Секція 1
-======================= */
-.section-1 {
+.hero-section {
     background-color: #2e2f42;
+    text-align: center;
     padding: 60px 0;
 }
 
-.section-1 .title-subtitle {
+.hero-title {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #ffffff;
 }
 
+/* =======================
+   🔹 Przycisk "Order Service"
+======================= */
 .button {
     background: #4d5ae5;
     font-weight: 500;
@@ -132,19 +103,14 @@ body {
 }
 
 /* =======================
-   Секція 2
+   🔹 Sekcja "Our Advantages"
 ======================= */
-.section-2 {
+.advantages-section {
     background-color: #ffffff;
     padding: 60px 0;
 }
 
-.section-2 ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.section-2 .item-title {
+.advantages-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -152,7 +118,7 @@ body {
     color: #2e2f42;
 }
 
-.section-2 .item-text {
+.advantages-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -160,14 +126,14 @@ body {
 }
 
 /* =======================
-   Секція 3
+   🔹 Sekcja "Our Team"
 ======================= */
-.section-3 {
+.team-section {
     background-color: #F4F4FD;
     padding: 60px 0;
 }
 
-.section-3 .title {
+.team-title {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -177,11 +143,7 @@ body {
     color: #2e2f42;
 }
 
-.section-3 .item {
-    background-color: #FFFFFF;
-}
-
-.section-3 .item-title {
+.team-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -190,15 +152,23 @@ body {
     color: #2e2f42;
 }
 
+.team-role {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
 /* =======================
-   Секція 4
+   🔹 Sekcja "Our Portfolio"
 ======================= */
-.section-4 {
-    background-color: #ffffff;
+.portfolio-section {
+    background-color: #FFFFFF;
     padding: 60px 0;
 }
 
-.section-4 .title {
+.portfolio-title {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -208,26 +178,29 @@ body {
     color: #2e2f42;
 }
 
+.portfolio-item-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.portfolio-item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
 /* =======================
-   Футер
+   🔹 Sekcja "Footer"
 ======================= */
 .page-footer {
     background-color: #2e2f42;
     padding: 40px 0;
-}
-
-.footer-logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
-}
-
-.footer-logo .logo-part {
-    color: #f4f4fd;
+    text-align: center;
 }
 
 .footer-text {
@@ -238,15 +211,9 @@ body {
     color: #f4f4fd;
 }
 
-/* =======================
-   Додаткові стилі
-======================= */
-address {
-    font-style: normal;
-}
-
 .footer-link {
     color: #f4f4fd;
+    text-decoration: none;
 }
 
 .footer-link:hover,
@@ -254,17 +221,15 @@ address {
     color: #404bbf;
 }
 
-.logo span {
-    color: #2e2f42;
-}
-
-.footer-logo span {
-    color: #f4f4fd;
-}
-
-/* Поправка для зображень */
+/* =======================
+   🔹 Dodatkowe style
+======================= */
 img {
     max-width: 100%;
     height: auto;
     width: 360px;
+}
+
+address {
+    font-style: normal;
 }
