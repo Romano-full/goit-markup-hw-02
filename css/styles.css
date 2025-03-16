@@ -11,13 +11,13 @@ body {
 }
 
 /* =======================
-   🔹 Header (Główny nagłówek)
+   🔹 Header (Головний заголовок)
 ======================= */
 .header {
     background-color: #ffffff;
 }
 
-/* 🔹 Styl для logo */
+/* 🔹 Стиль для logo */
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -35,7 +35,7 @@ body {
 }
 
 /* =======================
-   🔹 Nawigacja
+   🔹 Навігація
 ======================= */
 .nav-menu {
     list-style: none;
@@ -63,7 +63,7 @@ body {
     font-style: normal;
 }
 
-/* Стилізація списку контактів */
+/* Список контактів */
 .contact-list {
     list-style: none;
     margin: 0;
@@ -74,7 +74,7 @@ body {
     background-color: #FFFFFF;
 }
 
-/* Стилізація контактних посилань */
+/* 🔹 Стилізація контактних посилань */
 .contact-link {
     font-size: 16px;
     line-height: 1.5;
@@ -85,11 +85,7 @@ body {
 }
 
 /* Колір при наведенні */
-.contact-link:hover {
-    color: #404bbf;
-}
-
-/* Колір при фокусі */
+.contact-link:hover,
 .contact-link:focus {
     color: #404bbf;
 }
@@ -285,7 +281,6 @@ body {
 ======================= */
 img {
     max-width: 100%;
-    height: auto;
 }
 
 address {
