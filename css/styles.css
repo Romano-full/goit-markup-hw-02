@@ -40,12 +40,15 @@ body {
     text-decoration: none;
 }
 
-/* Akcent w logo */
+.logo-text {
+    color: #2e2f42;
+    /* Основний колір */
+    font-weight: bold;
+}
+
 .logo-accent {
     color: #4d5ae5;
-}
-.logo-part {
-    color: #2e2f42;
+    /* Інший колір для "Web" */
 }
 
 /* =======================
@@ -225,6 +228,10 @@ body {
     letter-spacing: 0.02em;
     color: #434455;
 }
+.first_member {
+    background-color: #FFFFFF;
+    /* Білий фон */
+}
 
 /* =======================
    🔹 Sekcja "Our Portfolio"
@@ -297,8 +304,15 @@ body {
 /* =======================
    🔹 Poprawiony styl dla `span` w stopce
 ======================= */
-.page-footer .logo-accent {
+.footer-logo-text {
     color: #f4f4fd;
+    /* Główny kolor tekstu */
+    font-weight: bold;
+}
+
+.footer-logo-accent {
+    color: #4d5ae5;
+    /* Inny kolor dla "Web" */
 }
 
 /* =======================
