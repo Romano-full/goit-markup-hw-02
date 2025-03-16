@@ -28,9 +28,7 @@ body {
     justify-content: space-between;
 }
 
-/* =======================
-   🔹 Logo
-======================= */
+/* Styl dla logo */
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -42,6 +40,7 @@ body {
     text-decoration: none;
 }
 
+/* Akcent w logo */
 .logo-accent {
     color: #2e2f42;
 }
@@ -78,6 +77,7 @@ body {
     font-style: normal;
 }
 
+/* Styl dla listy kontaktów */
 .contact-list {
     list-style: none;
     display: flex;
@@ -86,6 +86,7 @@ body {
     padding: 0;
 }
 
+/* Styl dla linków w kontaktach */
 .contact-link {
     font-size: 16px;
     line-height: 1.5;
@@ -262,21 +263,29 @@ body {
     text-align: center;
 }
 
-.page-footer p {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #F4F4FD;
-}
-
-.footer-link {
-    color: #f4f4fd;
+/* Styl dla logo w footerze */
+.footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
     text-decoration: none;
 }
 
-.footer-link:hover,
-.footer-link:focus {
-    color: #404bbf;
+/* Styl dla akcentu w logo */
+.footer-logo .logo-accent {
+    color: #f4f4fd;
+}
+
+/* Styl dla tekstu w footerze */
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--footer-text-color, #F4F4FD);
 }
 
 /* =======================
