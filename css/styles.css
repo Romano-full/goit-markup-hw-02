@@ -1,5 +1,5 @@
 /* =======================
-   🔹 Globalne style
+   🔹 Глобальні стилі
 ======================= */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap');
 
@@ -17,8 +17,8 @@ body {
     background-color: #ffffff;
 }
 
-/* 🔹 Logo */
-.logo {
+/* 🔹 Логотип */
+.header .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -29,61 +29,53 @@ body {
     text-decoration: none;
 }
 
-.logo-text {
-    color: #2e2f42;
-    font-weight: bold;
-}
-
-/* =======================
-   🔹 Навігація
-======================= */
+/* 🔹 Навігація */
 .nav-menu {
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 /* 🔹 Стилі для посилань у header */
-.header a {
+.header .nav-link {
+    font-size: 16px;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Ховер та фокус для навігаційних посилань */
+.header .nav-link:hover,
+.header .nav-link:focus {
+    color: #404bbf;
+}
+
+/* 🔹 Контакти в header (address) */
+.header .contact-info {
+    font-style: normal;
+}
+
+.header .contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🔹 Стилі для контактних посилань */
+.header .contact-link {
+    font-size: 16px;
     color: #434455;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
-/* Стиль для навігаційних посилань */
-.nav-link {
-    font-size: 16px;
-    font-weight: 500;
-}
-
-/* Стиль для контактних посилань */
-.contact-link {
-    font-size: 16px;
-}
-
-/* Ховер та фокус для посилань */
-.nav-link:hover,
-.nav-link:focus,
-.contact-link:hover,
-.contact-link:focus {
+/* Ховер та фокус для контактних посилань */
+.header .contact-link:hover,
+.header .contact-link:focus {
     color: #404bbf;
-}
-
-/* =======================
-   🔹 Контакти в header (address)
-======================= */
-.contact-info {
-    font-style: normal;
-}
-
-.contact-list {
-    list-style: none;
-    margin: 0;
-}
-
-.contact-link {
-    transition: color 0.3s ease-in-out;
 }
 
 /* =======================
