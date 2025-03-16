@@ -51,11 +51,22 @@ body {
     text-decoration: none;
 }
 
+/* Ховер та фокус для посилань */
+.nav-link:hover,
+.nav-link:focus {
+    color: #404bbf;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: #404bbf;
+}
+
+/* Глобальне правило для всіх посилань у header */
 .header a:hover,
 .header a:focus {
     color: #404bbf;
 }
-
 
 /* =======================
    🔹 Контакти в header (address)
@@ -77,7 +88,6 @@ body {
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
-
 
 /* =======================
    🔹 Sekcja Hero
