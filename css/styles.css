@@ -85,6 +85,9 @@ body {
     margin: 0;
     padding: 0;
 }
+.contact-list li {
+    background-color: #FFFFFF;
+}
 
 /* Styl dla linków w kontaktach */
 .contact-link {
