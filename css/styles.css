@@ -50,6 +50,10 @@ body {
     color: #2e2f42;
     text-decoration: none;
 }
+.header a:hover,
+.header a:focus {
+    color: #404bbf;
+}
 
 .nav-link:hover,
 .nav-link:focus {
@@ -182,6 +186,7 @@ body {
 
 .team-item {
     margin-bottom: 20px;
+    background-color: #FFFFFF;
 }
 
 .team-name {
