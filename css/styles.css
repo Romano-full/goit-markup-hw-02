@@ -65,8 +65,8 @@ body {
 /* Ховер та фокус для посилань */
 .nav-link:hover,
 .nav-link:focus,
-.contact-item:hover,
-.contact-item:focus {
+.contact-link:hover,
+.contact-link:focus {
     color: #404bbf;
 }
 
