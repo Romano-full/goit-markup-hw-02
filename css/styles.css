@@ -1,17 +1,29 @@
 /* ================== PODSTAWOWE STYLE ================== */
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #ffffff;
 }
 
+/* Посилання */
 a {
     text-decoration: none;
     color: inherit;
+    transition: color 0.3s ease;
 }
 
+a:hover,
+a:focus {
+    color: #404bbf;
+}
+
+/* Скидання стилів списків */
 ul {
     list-style: none;
     margin: 0;
@@ -25,14 +37,13 @@ ul {
     border-bottom: 1px solid #e4e4e4;
 }
 
-/* Nawigacja */
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Logo */
+/* Логотип */
 .logo {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -43,38 +54,22 @@ ul {
     color: #4d5ae5;
 }
 
-/* Poprawka koloru span w logo */
-.logo-accent {
-    color: #4d5ae5;
-}
-
-/* Menu nawigacji */
+/* Навігація */
 .nav-menu {
     display: flex;
     gap: 20px;
 }
 
-/* Linki w nawigacji */
+/* Посилання в навігації */
 .nav-link {
     font-size: 16px;
     font-weight: 500;
     color: #2e2f42;
-    transition: color 0.3s ease;
     letter-spacing: 0.02em;
     line-height: 1.5;
 }
 
-/* Kolor linków po najechaniu */
-.nav-link:hover {
-    color: #404bbf;
-}
-
-/* Kolor linków po kliknięciu */
-.nav-link:focus {
-    color: #404bbf;
-}
-
-/* Informacje kontaktowe */
+/* Інформація про контакти */
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -82,7 +77,6 @@ ul {
     gap: 5px;
 }
 
-/* Style dla linków kontaktowych */
 .contact-link {
     font-size: 16px;
     color: #434455;
@@ -91,17 +85,12 @@ ul {
     line-height: 1.5;
 }
 
-/* Kolor linków kontaktowych po najechaniu */
-.contact-link:hover {
-    color: #404bbf;
-}
-
-/* Kolor linków kontaktowych po kliknięciu */
+.contact-link:hover,
 .contact-link:focus {
     color: #404bbf;
 }
 
-/* Usunięcie kursywy w tagu address */
+/* Усунення курсиву у <address> */
 address {
     font-style: normal;
 }
@@ -114,17 +103,14 @@ address {
     padding: 60px 20px;
 }
 
-/* Nagłówek sekcji */
 .hero-title {
     font-size: 56px;
     font-weight: 700;
-    text-align: center;
-    color: #ffffff;
     line-height: 1.07;
     letter-spacing: 0.02em;
 }
 
-/* Przycisk */
+/* Кнопка */
 .button {
     background-color: #4d5ae5;
     color: #ffffff;
@@ -137,12 +123,7 @@ address {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Kolor tła przycisku po najechaniu */
-.button:hover {
-    background-color: #404bbf;
-}
-
-/* Kolor tła przycisku po kliknięciu */
+.button:hover,
 .button:focus {
     background-color: #404bbf;
 }
@@ -154,7 +135,6 @@ address {
     text-align: center;
 }
 
-/* Lista zalet */
 .advantages-list {
     display: flex;
     justify-content: space-between;
@@ -162,13 +142,11 @@ address {
     margin: 0 auto;
 }
 
-/* Pojedynczy element listy */
 .advantages-list li {
     text-align: center;
     max-width: 250px;
 }
 
-/* Nagłówek zalety */
 .advantages-list li h3 {
     font-size: 20px;
     font-weight: 500;
@@ -177,7 +155,6 @@ address {
     color: #2e2f42;
 }
 
-/* Opis zalety */
 .advantages-list li p {
     font-size: 16px;
     color: #434455;
@@ -192,17 +169,14 @@ address {
     text-align: center;
 }
 
-/* Nagłówek sekcji */
 .team-title {
     font-size: 36px;
     font-weight: 700;
-    text-align: center;
     color: #2e2f42;
     line-height: 1.11;
     letter-spacing: 0.02em;
 }
 
-/* Lista zespołu */
 .team-list {
     display: flex;
     justify-content: space-between;
@@ -210,7 +184,6 @@ address {
     margin: 0 auto;
 }
 
-/* Pojedynczy członek zespołu */
 .team-list li {
     background-color: #ffffff;
     text-align: center;
@@ -219,14 +192,12 @@ address {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Zdjęcie członka zespołu */
 .team-list li img {
     max-width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
 }
 
-/* Imię członka zespołu */
 .team-list li h3 {
     font-size: 20px;
     font-weight: 500;
@@ -235,7 +206,6 @@ address {
     color: #2e2f42;
 }
 
-/* Stanowisko członka zespołu */
 .team-list li p {
     font-size: 16px;
     color: #434455;
@@ -249,18 +219,15 @@ address {
     text-align: center;
 }
 
-/* Nagłówek sekcji */
 .portfolio-title {
     font-size: 36px;
     font-weight: 700;
-    text-align: center;
     color: #2e2f42;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
 }
 
-/* Lista projektów */
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
@@ -269,7 +236,6 @@ address {
     margin: 0 auto;
 }
 
-/* Pojedynczy projekt */
 .portfolio-list li {
     background-color: #ffffff;
     text-align: center;
@@ -280,14 +246,12 @@ address {
     margin-bottom: 20px;
 }
 
-/* Zdjęcie projektu */
 .portfolio-list li img {
     max-width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
 }
 
-/* Nagłówek projektu */
 .portfolio-list li h3 {
     font-size: 20px;
     font-weight: 500;
@@ -296,7 +260,6 @@ address {
     color: #2e2f42;
 }
 
-/* Opis projektu */
 .portfolio-list li p {
     font-size: 16px;
     color: #434455;
@@ -309,4 +272,19 @@ address {
     background-color: #2e2f42;
     padding: 40px 20px;
     text-align: left;
+}
+
+/* Логотип у футері */
+.footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+
+.footer-logo span {
+    color: #ffffff;
 }
