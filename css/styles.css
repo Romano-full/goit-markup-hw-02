@@ -29,6 +29,12 @@ body {
     text-decoration: none;
 }
 
+/* 🔹 Стиль для `span` у логотипі в хедері */
+.header .logo span {
+    color: #2e2f42;
+    /* Виправлено */
+}
+
 /* 🔹 Навігація */
 .nav-menu {
     list-style: none;
@@ -41,7 +47,9 @@ body {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
+    /* Виправлено */
     letter-spacing: 0.02em;
+    /* Виправлено */
     color: #2e2f42;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
@@ -51,6 +59,7 @@ body {
 .header .nav-link:hover,
 .header .nav-link:focus {
     color: #404bbf;
+    /* Виправлено */
 }
 
 /* 🔹 Контакти в header (address) */
@@ -76,6 +85,7 @@ body {
 .header .contact-link:hover,
 .header .contact-link:focus {
     color: #404bbf;
+    /* Виправлено */
 }
 
 /* =======================
@@ -130,35 +140,12 @@ body {
     color: #2e2f42;
 }
 
-.advantages-list {
-    list-style: none;
-    margin: 0;
-}
-
-.advantages-item {
-    margin-bottom: 20px;
-}
-
-.advantages-heading {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.advantages-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
 /* =======================
    🔹 Sekcja "Our Team"
 ======================= */
 .team-section {
     background-color: #F4F4FD;
+    /* Виправлено */
 }
 
 .team-title {
@@ -170,32 +157,8 @@ body {
     text-transform: capitalize;
     color: #2e2f42;
 }
-
-.team-list {
-    list-style: none;
-    margin: 0;
-}
-
 .team-item {
-    margin-bottom: 20px;
     background-color: #FFFFFF;
-}
-
-.team-name {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #2e2f42;
-}
-
-.team-role {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
 }
 
 /* =======================
@@ -215,40 +178,15 @@ body {
     color: #2e2f42;
 }
 
-.portfolio-list {
-    list-style: none;
-    margin: 0;
-}
-
-.portfolio-item {
-    margin-bottom: 20px;
-}
-
-.portfolio-item-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.portfolio-item-text {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
 /* =======================
-   🔹 Sekcja "Footer"
+   🔹 Footer
 ======================= */
 .page-footer {
     background-color: #2e2f42;
     text-align: center;
 }
 
-/* Стиль для логотипу в footer */
+/* 🔹 Стиль для логотипу в footer */
 .footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -260,22 +198,14 @@ body {
     text-decoration: none;
 }
 
-/* Стиль для тексту в footer */
-.footer-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #F4F4FD;
-}
-
-/* =======================
-   🔹 Стиль для `span` в footer
-======================= */
-.footer-logo-text {
+/* 🔹 Стиль для `span` у логотипі в футері */
+.footer-logo span {
     color: #f4f4fd;
+    /* Повернуто */
     font-weight: bold;
 }
 
+/* 🔹 Додатковий стиль для акценту */
 .footer-logo-accent {
     color: #4d5ae5;
 }
