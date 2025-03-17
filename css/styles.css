@@ -1,4 +1,13 @@
-/* Підключення шрифтів */
+/* Скидання глобальних стилів */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Основні стилі */
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -6,12 +15,7 @@ body {
 }
 
 /* Хедер */
-.header {
-    font-family: "Raleway", sans-serif;
-}
-
 .logo {
-    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
@@ -171,7 +175,6 @@ body {
 }
 
 .footer-logo {
-    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
